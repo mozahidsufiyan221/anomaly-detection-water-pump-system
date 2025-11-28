@@ -1,0 +1,16 @@
+py -m venv pumpenv
+.\pumpenv\Scripts\activate
+pip install ipykernel
+python -m ipykernel install --user --name=pumpenv --display-name "Python (pumpvenv)"
+pip install scipy
+py -m venv venv
+.\venv\Scripts\activate
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+pip install -r requirements.txt
+pip install plotly yfinance pytz ta streamlit
+Get-ExecutionPolicy
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+pip install langchain langgraph yfinance langchain-openai langchain-community ollama pydantic pandas gnews statsmodels finvizfinance plotly holidays cython scikit-learn fbprophet langgraph
+pip install --upgrade kaleido
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121        
